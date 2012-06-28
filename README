@@ -1,0 +1,16 @@
+connloop: An IPv4/6 TCP connection tester/flooder.
+
+This program lets you run TCP connectivity testing towards IPv4 and
+IPv6 targets. Detailed control over connection timeout lets you
+determine if a service is slow to respond, possibly due to overload or
+backend problems filling up the available resources.
+
+Usage: connloop [OPTION]... destination
+Options:
+  -p, --port=PORT     Port number or name to connect to. Default: 80
+  -d, --delay=NUM     Delay between connections in us. Default: 500000
+  -t, --timeout=SEC   Connection timeout in us. Default: 500000
+  -T, --runtime=SEC   Running time in seconds. Default: 0=inf
+  -c, --count=NUM     Connection count. Default: 0=inf
+  -v, --verbose       Verbose operation. Default: not enabled
+
